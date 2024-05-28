@@ -1,0 +1,79 @@
+@import "mixins";
+@import "variables";
+@import "/img/";
+
+main {
+  width: 100%;
+  @include flex-center;
+  flex-direction: column;
+
+  form {
+    @include flex-center;
+    margin-top: 4px;
+    width: 40%;
+
+    input {
+      padding: 2px;
+      text-indent: 3px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      width: 92%;
+      outline: none;
+      border: none;
+    }
+
+    button {
+      width: 8%;
+      background-color: rgb(38, 148, 154);
+      padding: 2px;
+      border: 1px solid black;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    
+      &:hover {
+        background-color: rgb(29, 113, 117);
+        cursor: pointer;
+      &:hover i {
+        color: white;
+      }
+      }
+      i.fa-magnifying-glass {
+        color: black;
+      }
+    }
+  }
+
+  div#listaP {
+    @include flex-center;
+    width: 70%;
+    flex-direction: column;
+
+    div.agrupamento {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
+
+      div.item {
+        display: flex;
+        width: 40%;
+        background: rgba(255, 255, 255, 0.596);
+        border-radius: 5px;
+        padding: 4px;
+        margin-bottom: 20px;
+        &:hover {
+          background: rgba(227, 222, 84, 0.986);
+          cursor: pointer;
+        }
+        
+        div.img-item {
+          padding: 2px;
+          img {
+            height: 150px;
+            max-width: 150px;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
