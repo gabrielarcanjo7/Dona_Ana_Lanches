@@ -55,7 +55,7 @@ module.exports = {
             filename: 'bundle.css' // Corrigindo o nome do arquivo CSS gerado
         }),
         new HtmlWebpackPlugin({
-            template: './public/index.html',
+            template: './index.html',
             filename: 'index.html'
         })
     ]
